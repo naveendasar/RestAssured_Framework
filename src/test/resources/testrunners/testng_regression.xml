@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name = "Regression Suit Test" thread-count = "1" verbose = "4">
+	
+	<!--<test name = "Go Rest Get API Test">
+		<parameter name = "baseURI" value = "https://gorest.co.in" />
+		<classes>
+			<class name = "com.qa.gorest.tests.GetUserTest" />
+		</classes>
+	</test>-->
+	
+	<test name = "HTTP Bin Orgs Test">
+		<parameter name = "baseURI" value = "https://httpbin.org" />
+		<classes>
+			<class name = "com.qa.gorest.tests.HTTPBinOrgsTest" />
+		</classes>
+	</test>
+	
+	<!--<test name = "Create User POJO Test">
+		<parameter name = "baseURI" value = "https://gorest.co.in" />
+		<classes>
+			<class name = "com.qa.gorest.tests.CreateUserTest" />
+		</classes>
+	</test>-->
+	
+	<!--<test name = "OAuth 2.0 Amadeus API">
+		<parameter name = "baseURI" value = "https://test.api.amadeus.com" />
+		<parameter name = "grant_type" value = "client_credentials" />
+		<parameter name = "client_id" value = "iUjy8ySPpuRKHZrVjQ6xLHl2saOpIaDj" />
+		<parameter name = "client_secret" value = "SkficSinsQUpqFEj" />
+		<classes>
+			<class name = "com.qa.gorest.tests.AmadeusOAuth2" />
+		</classes>
+	</test>
+	
+	<test name = "Get Products API Test">
+		<parameter name = "baseURI" value = "https://fakestoreapi.com" />
+		<classes>
+			<class name = "com.qa.gorest.tests.GetProductAPITest" />
+		</classes>
+	</test>-->
+	
+</suite>

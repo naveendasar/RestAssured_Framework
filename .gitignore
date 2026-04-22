@@ -1,0 +1,39 @@
+# Eclipse files
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.project
+.classpath
+
+# Java compiled files
+*.class
+
+# Logs
+*.log
+logs/
+log/
+
+# Maven
+target/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test Output files / Reports
+test-output/
+surefire-reports/
+failsafe-reports/
+reports/
+
+#Extend Reports
+extent-reports/
+extent-report/
+*.html
