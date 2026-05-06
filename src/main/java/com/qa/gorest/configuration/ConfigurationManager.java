@@ -31,7 +31,8 @@ public class ConfigurationManager {
 			System.out.println("Env name is null so running test cases in default env file");
 			fp = new FileInputStream(path);
 			
-		} else {
+		} 
+			else {
 			
 			switch(envName.toLowerCase().trim()) {
 			case "stage":
@@ -48,7 +49,7 @@ public class ConfigurationManager {
 				
 			default:
 				System.out.println("Incorrect Env Name = "+envName);
-				throw new APIFrameworkException("Environment Name doesn't exist there are only = stage, prod");
+				throw new APIFrameworkException("Environment Name doesn't exist, select any of these following env = stage, prod");
 			
 			}
 		}
@@ -56,7 +57,7 @@ public class ConfigurationManager {
 		prop.load(fp);
 
 		return prop;
-
+		
 	}
 
 }
